@@ -41,7 +41,6 @@ class ManualIndices:
 
         return tf_matrix
 
-    # пункт 6
     def create_freq_dict(self, ids, texts):
         """Строит частотный индекс через словарь"""
         freq_index = {}
@@ -59,7 +58,6 @@ class ManualIndices:
 
         return freq_index
 
-    # пункт 6
     def create_bm25_dict(self, ids, texts):
         """Строит bm-25 индекс через словарь"""
         # словарь длин документов
@@ -92,12 +90,10 @@ class ManualIndices:
 
         return bm25_idx
 
-    # пункт 7
     def create_freq_matrix(self, texts, vocab):
         """Строит частотный индекс через матрицу"""
         return self.build_tf_matrix(texts, vocab)
 
-    # пункт 7
     def create_bm25_matrix(self, texts, vocab):
         """Строит bm-25 индекс через матрицу"""
         tf_matrix = self.build_tf_matrix(texts, vocab)
@@ -121,7 +117,7 @@ class ManualIndices:
         return bm25
 
 
-df = pd.read_csv('reviews_preprocessed.csv')
+df = pd.read_csv('reviews_preprocessed.csv', index_col=0)
 texts = df['cleaned_text']
 
 builder = ManualIndices()
