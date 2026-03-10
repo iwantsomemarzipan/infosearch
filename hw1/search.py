@@ -1,4 +1,4 @@
-from preprocessing import Preprocessing
+from preprocessing import Preprocessing     # может долго подгружаться из-за spacy
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from bm25_vectorizer import BM25Vectorizer
