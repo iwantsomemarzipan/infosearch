@@ -1,5 +1,7 @@
 # Описание проекта
 
+NB: проект сделан на оценку 6
+
 ## Корпус
 В качестве корпуса был взят датасет [Wine Reviews](https://www.kaggle.com/datasets/zynicide/wine-reviews?select=winemag-data-130k-v2.csv) c Kaggle. Предобработанный корпус содержит 10к вхождений из оригинального датасета.
 
